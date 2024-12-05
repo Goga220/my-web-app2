@@ -1,21 +1,16 @@
-/* Общие стили для контейнера */
+/* Общие стили */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff; /* Белый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Центрирование по высоте */
 }
 
 .container {
   text-align: center;
-  padding: 20px;
-}
-
-/* Иконка (эмодзи) */
-.book-icon,
-.money-icon {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 6rem; /* Оптимальный размер для мобильных устройств */
 }
 
 /* Заголовок */
@@ -25,39 +20,43 @@ h1 {
   margin: 20px 0;
 }
 
+/* Эмодзи (увеличенное в 5 раз) */
+.wave-icon {
+  display: inline-block;
+  font-size: 10rem; /* Увеличено в 5 раз */
+  margin-bottom: 20px;
+}
+
 /* Кнопки */
-button,
-.back-button {
+button {
   display: block;
   width: 90%; /* Адаптация под мобильные устройства */
-  max-width: 300px; /* Максимальная ширина кнопки */
-  margin: 10px auto; /* Отцентрировать кнопки */
+  max-width: 300px;
+  margin: 10px auto; /* Центрирование */
   padding: 15px;
   font-size: 1rem;
   background-color: #ffa500; /* Оранжевый цвет */
-  color: #ffffff;
+  color: #ffffff; /* Белый текст */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-transform: uppercase; /* Текст заглавными буквами */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень кнопки */
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
 /* Эффект при наведении */
-button:hover,
-.back-button:hover {
-  background-color: #e59400; /* Темнее оранжевый */
+button:hover {
+  background-color: #e59400; /* Темно-оранжевый при наведении */
 }
 
 /* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
-  .book-icon,
-  .money-icon {
-    font-size: 5rem; /* Уменьшаем размер эмодзи на мобильных */
+  h1 {
+    font-size: 1.5rem; /* Уменьшение размера текста на маленьких экранах */
   }
 
-  h1 {
-    font-size: 1.5rem; /* Уменьшаем размер заголовка */
+  .wave-icon {
+    font-size: 8rem; /* Чуть меньше на мобильных */
   }
 }
