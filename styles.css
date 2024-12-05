@@ -1,63 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
+/* Основной контейнер */
 .container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
 }
 
-.emoji {
-    font-size: 5rem;
-    margin-bottom: 20px;
+/* Иконка 💸 */
+.money-icon {
+  display: inline-block; /* Убедитесь, что эмодзи обрабатывается как блочный элемент */
+  font-size: 10rem; /* Увеличиваем размер в 5 раз */
+  margin-top: 20px; /* Отступ сверху */
 }
 
-.welcome h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+/* Заголовок */
+h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 10px;
-    transition: background-color 0.3s;
-    width: 200px;
+/* Кнопки офферов */
+.offers-buttons button {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-button a {
-    color: white;
-    text-decoration: none;
-    display: block;
+.offers-buttons button:hover {
+  background-color: #45a049;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-button:active {
-    background-color: #3e8e41;
-}
-
+/* Кнопка назад */
 .back-button {
-    background-color: #f44336;
-    margin-top: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .back-button:hover {
-    background-color: #da190b;
+  background-color: #d32f2f;
 }
