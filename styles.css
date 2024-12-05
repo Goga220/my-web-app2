@@ -21,7 +21,7 @@ h1 {
 }
 
 /* Эмодзи (увеличенное в 5 раз) */
-.wave-icon .money-icon .book-icon {
+.emoji {
   display: inline-block;
   font-size: 10rem; /* Увеличено в 5 раз */
   margin-bottom: 20px;
