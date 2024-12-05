@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Offers</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .button {
+      display: block;
+      background-color: orange;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      margin: 10px 0;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: darkorange;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <div class="icon">
-      <span class="emoji">💸</span>
-    </div>
-    <h1>Выберите оффер:</h1>
-    <div class="offers-buttons">
-      <button>P2Plab</button>
-      <button>MoneyGate</button>
-      <button>TotalP2P</button>
-      <button>TradeMO</button>
-      <button>CryptoCards</button>
-      <button>Zorox</button>
-      <button>Payscrow</button>
-      <button>🇹🇯TJS</button>
-    </div>
-    <button class="back-button" onclick="window.location.href='index.html'">Назад</button>
+    <h1 class="emoji">💸</h1> <!-- Эмодзи приветствия -->
+    <h2>Выберите оффер:</h2>
+    <a href="p2plab.html">
+      <button class="button">P2PLAB</button>
+    </a>
+    <a href="moneygate.html">
+      <button class="button">MONEYGATE</button>
+    </a>
+    <a href="totalp2p.html">
+      <button class="button">TOTALP2P</button>
+    </a>
+    <a href="trademo.html">
+      <button class="button">TRADEMO</button>
+    </a>
+    <a href="cryptocards.html">
+      <button class="button">CRYPTOCARDS</button>
+    </a>
+    <a href="zorox.html">
+      <button class="button">ZOROX</button>
+    </a>
+    <a href="payscrow.html">
+      <button class="button">PAYSCROW</button>
+    </a>
+    <a href="tjs.html">
+      <button class="button">TJS</button>
+    </a>
+    <a href="index.html">
+      <button class="button">Назад</button>
+    </a>
   </div>
 </body>
 </html>
